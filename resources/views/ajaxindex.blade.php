@@ -29,19 +29,21 @@
         </table>
     </div>
     <div class="col-lg-4">
-        <form action="">
-            @csrf
-            <input type="hidden" name="id" id="id" >
-            <div class="form-group">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" name="name" id="editname" class="form-control">
-            </div>
-            <div class="form-group mt-3">
-                <div class="float-end">
-                    <button id="btn-update" class="btn btn-info btn-sm">Update</button>
+        <div class="card p-3">
+            <form action="">
+                @csrf
+                <input type="hidden" name="id" id="id" >
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" name="name" id="editname" class="form-control">
                 </div>
-            </div>
-        </form>
+                <div class="form-group mt-3">
+                    <div class="float-end">
+                        <button id="btn-update" class="btn btn-info btn-sm">Action</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 <script>
