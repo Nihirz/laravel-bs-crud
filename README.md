@@ -9,4 +9,5 @@
 
 ## After the installation run this commands
 ```composer update ```
+
 ```php artisan key:generate```
