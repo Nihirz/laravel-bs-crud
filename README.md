@@ -2,9 +2,9 @@
 ```git clone https://github.com/Nihirz/laravel-bs-crud.git```
 
 ## After the installation run this commands
-```composer update ```
-
 ```cd laravel-bs-crud```
+
+```composer update ```
 
 ```php artisan key:generate```
 
