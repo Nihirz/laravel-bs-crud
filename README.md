@@ -4,6 +4,8 @@
 ## After the installation run this commands
 ```composer update ```
 
+```cd laravel-bs-crud```
+
 ```php artisan key:generate```
 
 # Ignore
