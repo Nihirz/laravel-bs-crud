@@ -26,9 +26,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [AjaxController::class,'index'])->name('ajax');
+Route::get('/', function () {
+    return redirect()->route('ajax');
+});
 
-Route::get('/ajax',[AjaxController::class,'index'])->name('ajax');
+// Route::get('/ajax',[AjaxController::class,'index'])->name('ajax');
 // Route::prefix(config('admintw.prefix'))->middleware(['auth', 'verified', 'activeUser', 'IpCheckMiddleware'])->group(function () {
 //     Route::get('/', Dashboard::class)->name('dashboard');
 
