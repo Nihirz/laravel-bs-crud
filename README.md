@@ -17,3 +17,5 @@
 ```https://laraveladmintw.com/v3/docs/installation```
 
 6FN8Yyn^!^l5
+
+php artisan make:model Category -mc

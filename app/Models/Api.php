@@ -10,6 +10,6 @@ class Api extends Model
     protected $guarded = [];
     protected $table = 'apis';
     protected $fillable = [
-        'name','phone'
+        'name','phone', 'id'
     ];
 }

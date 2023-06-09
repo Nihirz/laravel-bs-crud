@@ -23,4 +23,4 @@ Route::post('api/index',[ApiController::class,'index']);
 Route::post('api/store',[ApiController::class,'store']);
 Route::post('api/edit/{id}',[ApiController::class,'edit']);
 Route::post('api/update',[ApiController::class,'update']);
-Route::post('api/destroy',[ApiController::class,'destroy']);
+Route::post('api/destroy/{id}',[ApiController::class,'destroy']);
