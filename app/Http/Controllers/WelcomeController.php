@@ -8,10 +8,10 @@ use Illuminate\View\View;
 
 class WelcomeController extends Controller
 {
-    public function __invoke(): view
-    {
-        return view('welcome');
-    }
+    // public function __invoke(): view
+    // {
+    //     return view('welcome');
+    // }
     public function ajax(Request $request){
         if($request->ajax()){
             $view = 'ajaxindex';

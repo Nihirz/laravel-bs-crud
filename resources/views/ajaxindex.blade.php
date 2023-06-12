@@ -47,6 +47,8 @@
     </div>
 </div>
 <script>
+
+    // Delete code
     $(".btn-danger").on('click', function() {
         let url = $(this).data('url');
         let id = $(this).data('id');
@@ -58,11 +60,14 @@
             },
             success: function(data) {
                 if (data.code == 200) {
+                    alert('Deleted successfully.');
                     ajaxCall();
                 }
             }
         });
     });
+
+    // Edit code
     $(".btn-success").on('click', function() {
         let url = $(this).data('url');
         let id = $(this).data('id');
@@ -72,14 +77,16 @@
             data: {
                 'id': id,
             },
-            success: function(data) {
-                $("#id").val(data.data.id);
-                $("#editname").val(data.data.name);
+            success: function(response) {
+                $("#id").val(response.data.id);
+                $("#editname").val(response.data.name);
             }
         });
     });
-    $('#btn-update').on('click', function(e) {
-        e.preventDefault();
+
+    // Store Method
+    $('#btn-update').on('click', function(event) {
+        event.preventDefault();
         let name = $("#editname").val();
         let id = $("#id").val();
         $.ajax({
@@ -93,8 +100,8 @@
             success: function(response) {
                 if(response.code == 200){
                     $("#editname").val("");
-                    ajaxCall();
-                    
+                    $("#id").val("");
+                    ajaxCall();   
                 }
             }
         });
