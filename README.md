@@ -25,3 +25,11 @@ php artisan make:model Category -mc
 - for add new field in table using migration file
 
 ```php artisan make:migration user_uniq_id --table="tests"```
+
+## Ajax
+
+- ```ajaxindex.blade.php``` for list out the ajax page.
+
+- ```index.blade.php``` for view page or rendered page of ajaxindex.
+
+- ```WelcomeController.php``` for manage the actions.
