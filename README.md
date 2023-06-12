@@ -33,3 +33,9 @@ php artisan make:model Category -mc
 - ```index.blade.php``` for view page or rendered page of ajaxindex.
 
 - ```WelcomeController.php``` for manage the actions.
+
+## Ajax Ulternativ
+
+- ```https://htmx.org/```
+
+- ```https://laravel-livewire.com/```
