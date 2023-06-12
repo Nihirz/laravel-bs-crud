@@ -19,3 +19,9 @@
 6FN8Yyn^!^l5
 
 php artisan make:model Category -mc
+
+## Command
+
+- for add new field in table using migration file
+
+```php artisan make:migration user_uniq_id --table="tests"```
