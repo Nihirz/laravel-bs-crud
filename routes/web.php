@@ -3,6 +3,7 @@
 use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\Auth\TwoFaController;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\MailController;
 use App\Http\Livewire\Admin\AuditTrails;
 use App\Http\Livewire\Admin\Dashboard;
 use App\Http\Livewire\Admin\Roles\Edit;
@@ -57,3 +58,5 @@ Route::get('/ajax',[WelcomeController::class,'ajax'])->name('ajax');
 Route::post('store',[WelcomeController::class,'store'])->name('store');
 Route::get('edit/{id}',[WelcomeController::class,'edit'])->name('edit');
 Route::get('delete/{id}',[WelcomeController::class,'delete'])->name('delete');
+Route::get('get-contact',[MailController::class,'contact'])->name('contact');
+Route::post('contact',[MailController::class,'mail'])->name('mail');

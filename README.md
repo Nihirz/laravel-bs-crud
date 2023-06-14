@@ -39,3 +39,7 @@ php artisan make:model Category -mc
 - ```https://htmx.org/```
 
 - ```https://laravel-livewire.com/```
+
+
+
+<!-- Facades -->

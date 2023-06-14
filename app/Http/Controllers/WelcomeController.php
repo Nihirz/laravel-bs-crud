@@ -46,5 +46,12 @@ class WelcomeController extends Controller
         return response()->json([
             'data'=>$data,
         ]);
+        // Log::channel('custom')->info('
+        // File Delete On',[
+        //     'user_role'=>Auth::user()->roles[0]['name'],
+        //     'File Edit By user_name'=>Auth::user()->name,
+        //     'File Edit On Date'=>$date,
+        //     'Deleted ID'=>$id,
+        // ]);
     }
 }
