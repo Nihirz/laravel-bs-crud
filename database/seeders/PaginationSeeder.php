@@ -10,6 +10,6 @@ class PaginationSeeder extends Seeder
 {
     public function run()
     {
-        Pagination::factory(100)->create();
+        Pagination::factory(10000)->create();
     }
 }

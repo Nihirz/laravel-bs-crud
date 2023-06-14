@@ -53,4 +53,10 @@ php artisan make:model Pagination -mcfs
 - ```-s```  = Seeder File
 
 
+
+<!-- Mail -->
+<!-- https://mailtrap.io/ -->
+<!-- Log -->
 <!-- Facades -->
+<!-- Pagination -->
+<!-- https://yajrabox.com/ -->
