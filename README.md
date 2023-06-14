@@ -41,5 +41,16 @@ php artisan make:model Category -mc
 - ```https://laravel-livewire.com/```
 
 
+## Fake Data
+php artisan make:model Pagination -mcfs
+
+- ```-m```  = Migration File
+
+- ```-c```  = Controller File
+
+- ```-f```  = Factory File
+
+- ```-s```  = Seeder File
+
 
 <!-- Facades -->
