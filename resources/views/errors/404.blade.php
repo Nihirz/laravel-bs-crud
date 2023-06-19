@@ -1,9 +1,5 @@
-<x-app-layout>
-@section('title', '404')
+@extends('errors::minimal')
 
-<h3 class="text-center mt-10">404 - The requested page was not found.</h3>
-
-@include('errors.messages')
-
-</x-app-layout>
-
+@section('title', __('Not Found'))
+@section('code', '404')
+@section('message', __('Not Found'))

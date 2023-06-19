@@ -1,10 +1,5 @@
-<x-app-layout>
-@section('title', '401')
+@extends('errors::minimal')
 
-<h3>401 - You do not have the correct permissions.</h3>
-
-@include('errors.messages')
-
-<h4>{{ $message ?? '' }}</h4>
-    
-</x-app-layout>
+@section('title', __('Unauthorized'))
+@section('code', '401')
+@section('message', __('Unauthorized'))
