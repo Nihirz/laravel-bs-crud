@@ -101,7 +101,7 @@
                 if(response.code == 200){
                     $("#editname").val("");
                     $("#id").val("");
-                    ajaxCall();   
+                    ajaxCall();
                 }
             }
         });

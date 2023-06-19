@@ -5,13 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class WelcomeController extends Controller
 {
-    // public function __invoke(): view
-    // {
-    //     return view('welcome');
-    // }
     public function ajax(Request $request){
         if($request->ajax()){
             $view = 'ajaxindex';
@@ -22,7 +19,7 @@ class WelcomeController extends Controller
         return view($view,compact('data'));
     }
     public function store(Request $request)
-    {   
+    {
         Category::updateOrCreate([
             'id'=>$request->id,
         ],
@@ -53,5 +50,10 @@ class WelcomeController extends Controller
         //     'File Edit On Date'=>$date,
         //     'Deleted ID'=>$id,
         // ]);
+    }
+    public function export(){
+        $data = Category::get();
+        $pdf = Pdf::loadView('ajaxindex', compact('data'));
+        return $pdf->download('invoice.pdf');
     }
 }

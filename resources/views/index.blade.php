@@ -1,6 +1,9 @@
 @extends('header')
 @section('content')
     <div class="container">
+        <div class="float-end">
+            <a href="{{ route('category.export') }}" class="btn btn-sm btn-primary">Export</a>
+        </div>
         <div class="mt-5">
             <div class="showdiv"></div>
         </div>
@@ -34,7 +37,7 @@
         //                 $("#name").val("");
         //                 $("#btn-close").click();
         //                 ajaxCall();
-                        
+
         //             }
         //         }
         //     });

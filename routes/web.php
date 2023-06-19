@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\TwoFaController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\PaginationController;
+use App\Http\Controllers\PdfController;
 use App\Http\Livewire\Admin\AuditTrails;
 use App\Http\Livewire\Admin\Dashboard;
 use App\Http\Livewire\Admin\Roles\Edit;
@@ -68,3 +69,5 @@ Route::post('contact',[MailController::class,'mail'])->name('mail');
 
 // Pagination
 Route::get('pagination',[PaginationController::class,'index'])->name('p.index');
+
+Route::get('category/export',[WelcomeController::class,'export'])->name('category.export');
