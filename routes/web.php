@@ -15,6 +15,7 @@ use App\Http\Livewire\Admin\Settings\Settings;
 use App\Http\Livewire\Admin\Users\EditUser;
 use App\Http\Livewire\Admin\Users\ShowUser;
 use App\Http\Livewire\Admin\Users\Users;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
