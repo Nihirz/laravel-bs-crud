@@ -2,10 +2,12 @@
 
 use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\Auth\TwoFaController;
+use App\Http\Controllers\DependentController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\PaginationController;
 use App\Http\Controllers\PdfController;
+use App\Http\Controllers\ProductController;
 use App\Http\Livewire\Admin\AuditTrails;
 use App\Http\Livewire\Admin\Dashboard;
 use App\Http\Livewire\Admin\Roles\Edit;
@@ -71,3 +73,12 @@ Route::post('contact',[MailController::class,'mail'])->name('mail');
 Route::get('pagination',[PaginationController::class,'index'])->name('p.index');
 
 Route::get('category/export',[WelcomeController::class,'export'])->name('category.export');
+
+// Product
+Route::get('product',[ProductController::class,'index'])->name('product.index');
+Route::post('product',[ProductController::class,'store'])->name('product.store');
+
+
+// Dependent Routes
+Route::get('dependent/index',[DependentController::class,'index'])->name('dependent.index');
+Route::get('get-product',[DependentController::class,'gp'])->name('gp');
